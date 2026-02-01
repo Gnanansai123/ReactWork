@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* 🌄 FULL BACKGROUND WITH OVERLAY */
+.signup-container {
+    height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+
+  background-size: auto;
+  
+}
+
+/* 🧊 Glassmorphism Card */
+.signup-card {
+  width: 380px;
+  max-width: 90%;
+  padding: 35px;
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+
+  color: #fff;
+  text-align: center;
+}
+
+/* Heading */
+.signup-card h1 {
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+/* Labels */
+.signup-card label {
+  display: block;
+  text-align: left;
+  margin-top: 12px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Inputs */
+.signup-card input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+
+  border-radius: 25px;
+  border: none;
+  outline: none;
+
+  font-size: 14px;
+}
+
+.signup-card input:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+/* Button */
+.signup-card button {
+  margin-top: 22px;
+  width: 100%;
+  padding: 12px;
+
+  border-radius: 25px;
+  border: none;
+
+  background: linear-gradient(135deg, #000, #333);
+  color: white;
+  font-size: 15px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signup-card button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #111, #444);
+}
+
+/* Forgot password */
+.forgot {
+  margin-top: 15px;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.forgot span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Social text */
+.social-text {
+  margin-top: 22px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Social icons */
+.social-icons {
+  margin-top: 12px;
+}
+
+.social-icons i {
+  margin: 0 12px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.social-icons i:hover {
+  transform: scale(1.2);
+}
